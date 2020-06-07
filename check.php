@@ -76,10 +76,10 @@ $phid_session = getStr($parameter, "phid_session=", ";");
 $uuid = getStr($parameter, "uuid=", ";");
 
 $authurl = urlencode($return_url);
-$emailx =urlencode($email);
+$emaily =urlencode($email);
 
 $url = 'https://www.phd.co.id/en/users/verifyLoginUser';
-$postData = 'request_id=&return_url='.$authurl.'&my_token='.$my_token.'&username='.$emailx.'&password='.$passwd;
+$postData = 'request_id=&return_url='.$authurl.'&my_token='.$my_token.'&username='.$emaily.'&password='.$passwd;
 $headers = array();
 $headers[] =  "Host: www.phd.co.id" ;
 $headers[] =  "User-Agent: Pizza%20Hut%20Indonesia%20PROD/90 CFNetwork/1125.2 Darwin/19.4.0";
